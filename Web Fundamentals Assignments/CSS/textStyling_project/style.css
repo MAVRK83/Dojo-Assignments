@@ -1,12 +1,27 @@
-h1 {
-    color: white;
-    font-size: 50px;
-    background: black;
 
+
+* {
+    font-family: sans-serif;
 }
 
-.content{ 
-    background-color:blue;
-    height:100px
-    
+h1 {
+    background-color: black;
+    color: white;
+}
+
+h1 span {
+    color: cyan;
+}
+
+h2 {
+    background-color: rebeccapurple;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+h3 {
+    background-color: cadetblue;
+    text-align: right;
+    text-decoration: underline;
 }
