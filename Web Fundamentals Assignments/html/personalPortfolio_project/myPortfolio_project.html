@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Peronal Portfolio</title>
 </head>
 <style>
     table,th,td {
         border: 1px solid black;
         border-collapse;
     }
+    .danger{background-color: red;}
 </style>
 <body>
     <h1>Matthew Kim</h1>
-        <div>
-            <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="github logo" width="20" height="20"> -->
-        </div>
+    <img src="Matt.jpg" alt="matt's selfie" width="200" height="200">
         <div>
             <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="github logo" width="20" height="20">
             <a href="https://github.com/MAVRK83">Github</a>
@@ -26,38 +25,38 @@
             <a href="mailto:mattkim83@gmail.com? subject= text">My Email</a>
         </div>
         <div>
-        <h2>Technologies</h2>
-        <table>
-            <tr>
-                <th>Front-End</th>
-                <th>Python</th>
-                <th>JavaScript</th>
-                <th>Database</th>
-                <th>Concepts</th>
-            </tr>
-            <tr>
-                <th>HTML 5</th>
-                <th>Django</th>
-                <th>Express</th>
-                <th>MySQL</th>
-                <th>AJAX</th>
-            </tr>
-            <tr>
-                <th>CSS3</th>
-                <th>Flask</th>
-                <th>Mongoose</th>
-                <th>MongoDB</th>
-                <th>OOP</th>
-            </tr>
-            <tr>
-                <th>Bootstrap</th>
-                <th>Unittest</th>
-                <th>React</th>
-                <th></th>
-                <th>REST</th>
-            </tr>
-        </table>
-        </div>
+            <h2>Technologies</h2>
+            <table>
+                <tr>
+                    <th>Front-End</th>
+                    <th>Python</th>
+                    <th>JavaScript</th>
+                    <th>Database</th>
+                    <th>Concepts</th>
+                </tr>
+                <tr>
+                    <td>HTML 5</td>
+                    <th>Django</th>
+                    <th>Express</th>
+                    <th>MySQL</th>
+                    <th>AJAX</th>
+                </tr>
+                <tr>
+                    <th>CSS3</th>
+                    <th>Flask</th>
+                    <th>Mongoose</th>
+                    <th>MongoDB</th>
+                    <th>OOP</th>
+                </tr>
+                <tr>
+                    <th>Bootstrap</th>
+                    <th>Unittest</th>
+                    <th>React</th>
+                    <th></th>
+                    <th>REST</th>
+                </tr>
+            </table>
+            </div>
         <div>
             <h2>Social Snakes</h2>
             <p>Social Media App made in Python - </p>
@@ -65,15 +64,17 @@
         <div>
             <h2>Contact Me</h2>
             <p>Social Media App made in Python - </p>
+            
         </div>
+        <form action="">
         <label for="name">Name:</label>
         <input type="text" name="name">
         <label for="email">Email:</label>
         <input type="email" name="email">
-        <div>
+        <div class="danger">
             <label for="Message">Message:</label>
             <textarea name="Message" cols="20" rows="3">
-                </textarea>
+            </textarea>
         </div>
         <input type="submit" value="Send Message">
 </body>
