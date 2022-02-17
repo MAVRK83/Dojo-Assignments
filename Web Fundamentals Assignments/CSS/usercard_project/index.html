@@ -2,25 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UserCard</title>
+    <title>Profile Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <div class="wrapper">
-        <div class="topborder"></div>
-        <div class="profilepic">
-            <img src="Assets/Matt.jpg" alt="picture of Matt" height="200px" width="200px">
-        </div>
-        <h2>Matthew Kim</h2>
-        <div class="location"></div>
-        <p>Developer I Engineer I Problem Solver</p>
-        <p>Master of shadows and the Internet!</p>
-        <div class="editlink">
-            <a href="" id="editlink"></a>
-        </div>
 
+    <div class="flex-container">
+        <div class="user-card">
+            <div class="card-header">
+                <img src="Assets/Matt.jpg" alt="matts pic" class="user-circle">
+            </div>
+            <div class="card-body">
+                <h1>Matthew Kim</h1>
+                <h3>
+                    <img src="Assets/map-marker.png" alt="pin" class="icon-s"> 
+                    Las Vegas
+                </h3>
+                <p>Developer | Engineer | Problem Solver<br>
+                Master of shadows and the Internet!</p>
+                <p>
+                    <a href="#">
+                        <img src="icons/gear.png" alt="gear" class="icon-s"> 
+                        edit profile
+                    </a>
+                </p>
+            </div>
+        </div>
     </div>
+
 </body>
 </html>
