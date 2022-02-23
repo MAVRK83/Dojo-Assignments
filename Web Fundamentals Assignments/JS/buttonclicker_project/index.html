@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ButtonClicker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top">
+        <div class="nav">
+            <h1 class="nav-title">Dojonary</h1>
+            <input class="text" placeholder="Search">
+                <button onclick="logout(this)" class="btn">Login</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- left column-->
+            <div class="col-2">
+                <div class="word-card">
+                    <div class="card-header">
+                        <h2>ninja</h2>
+                        <p><span class="noun">noun</span></p>
+                        <p>Plural: <span class="ninjas">ninjas</span></p>
+                        <button onclick="alert('Ninja was liked')" class="likes">13 likes</button>
+                    </div>
+                    <div class="def">
+                        
+                        <p>A practitioner skilled in the <span class="underline">Japanese</span> art of <span class="underline">ninjutsu</span></p>
+                    </div>
+                </div>
+                <div class="word-card">
+                    <div class="card-header">
+                        <h2>ninja</h2>
+                        <p><span class="noun">noun</span></p>
+                        <p>Plural: <span class="ninjas">ninjas</span></p>
+                        <button onclick="alert('Ninja was liked')" class="likes">37 likes</button>
+                    </div>
+                    <div class="def">
+                        <p>A <span class="underline">programmer</span> who breaks down problems with <span class="underline">zen</span>-like focus</p>
+                    </div>
+                </div>
+            </div>
+            <!-- right column -->
+            <div class="col">
+                <div class="card">
+                    <div class="header">
+                        <p>
+                            Dojonary is defined by
+                            <span class="you">YOU</span>
+                        </p>
+                    </div>
+                    
+                        <button onclick="addDef(this)" class = "add-def">Add Definition</button>
+                    
+                </div>
+            </div>  
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

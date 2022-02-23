@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f3f3;
+    margin:20px;
+}
+
+.top {
+    background-color:grey ;
+}
+
+.nav {
+    width:1000px;
+    margin: 20px auto;
+    color: black;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    flex-direction: row wrap;
+}
+
+.nav-links {
+    width: 50%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;   
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-title {
+    margin-left: 20px;
+}
+
+.text {
+    margin: 20px;
+    width: 500px;
+    height: 30px;
+    display: flex;
+    
+
+}
+.btn {
+    height:35px;
+    width:100px;
+    background-color: blue;
+    color: white;
+    border: none;
+    font-size: 16px;
+    box-shadow: 5px 5px black;
+}
+
+.container {
+    width 1080px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: flex-start ;
+}
+
+.col, .col-2 {
+    margin: 10px;
+    padding: 10px;
+    flex: 1;
+}
+
+.col-2 {
+    height:;
+    flex: 2;
+}
+
+.word-card {
+    background-color: white;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 1.2 rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    flex-direction: column wrap;
+}
+
+.def {
+    margin:50px;
+    display: flex;
+    flex-direction: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.noun {
+    font-style: italic;
+}
+
+.ninjas {
+    font-style: italic;
+}
+
+.likes {
+    margin-top: 20px;
+    height:35px;
+    width:100px;
+    background-color: #ffc107;
+    color: black;
+    border: none;
+    font-size: 16px;
+    box-shadow: 5px 5px black;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-color: blue;
+    color: blue;
+}
+
+.card {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 1.2 rem;
+    overflow: hidden;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.add-def {
+    height:35px;
+    width:200px;
+    background-color: rgb(58, 158, 67);
+    color: white;
+    border: none;
+    font-size: 16px;
+    box-shadow: 5px 5px black;
+}
+
+.you {
+    font-weight: bold;
+}
+
+p { 
+    font-size: medium;
+}

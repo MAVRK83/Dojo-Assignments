@@ -4,41 +4,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>My Cool Site</title>
 </head>
 <body>
     <div class="wrapper">
-        <nav> <h1>Hello World</h1>
-        <ul>
-            <li><a href="">Link</a></li>
-            <li><a href="">Link</a></li>
-            <li><a href="">Link</a></li>
-            
-        </ul>
-        </nav>
-
-        <div class="wrapper">
-
-            <div class="hero">
-                <h2 id = "whatIWantToChange">I Change Color or Size</h2>
-                <button onclick="myFunction(this)">Change ME</button>
-                <button onclick="myOtherFunction()">Change other thing</button>
-                <button onclick="myIfFunction(this)">If Function</button>
-                <button onclick="rando()">rando</button>
-
-
+        <nav>
+            <div class="nav-top">
+                <h1>My Cool Site</h1>
+                <button onclick = "login(this)">Login</button>
+            </div>
+            <div class="nav-bottom">
+                <ul>
+                    <li>
+                        <a href="#">Item1</a>
+                    </li>
+                    <li>
+                        <a href="#">Item2</a>
+                    </li>
+                    <li>
+                        <a href="#">Item3</a>
+                    </li>
+                    <li>
+                        <a href="#">Item4</a>
+                    </li>
+                    
+                </ul>
             </div>
 
-
-
-
-
-
+        </nav>
+        <h2>Some Cool Content</h2>
+        <div class="hero">
+            <div class="hero-content">
+                <img onmouseover = "change(this)" 
+                onmouseout = "changeBack(this)"
+                src="./assets/prof-pic.jpeg" alt="profile-pic">
+                <a href="">User name</a>
+                <div class="hero-content-buttons">
+                    <div class="heart">
+                        <i onclick="like('l1')" class="fa fa-heart-o" style="font-size:24px"></i>
+                        <p id="l1">0</p>
+                    </div>
+                    <div class="join">
+                        <button onclick="join()">
+                            <img src="" alt="">
+                            Join
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="hero-content">
+                <img src="./assets/prof-pic.jpeg" alt="profile-pic">
+                <a href="">User name</a>
+                <div class="hero-content-buttons">
+                    <div class="heart">
+                        <i onclick="like('l2')" class="fa fa-heart-o" style="font-size:24px"></i>
+                        <p id="l2">0</p>
+                    </div>
+                    <div class="join">
+                        <button onclick="join()">
+                            <img src="" alt="">
+                            Join
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="hero-content">
+                <img src="./assets/prof-pic.jpeg" alt="profile-pic">
+                <a href="">User name</a>
+                <div class="hero-content-buttons">
+                    <div class="heart">
+                        <i onclick="like('l3')" class="fa fa-heart-o" style="font-size:24px"></i>
+                        <p id="l3">0</p>
+                    </div>
+                    <div class="join">
+                        <button onclick="join()">
+                            <img src="" alt="">
+                            Join
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <h2>Some Other Cool Things</h2>
+        <div class="under-hero">
+            
+            <div class="profile-content">
+                <img src="./assets/prof-pic.jpeg" alt="profile-pic">
+                <div class="profile-details">
+                    <p>Some Name</p>
+                    <p>Some Other great Info</p>
+                </div>
+            </div>
+            <div class="profile-content">
+                <img src="./assets/prof-pic.jpeg" alt="profile-pic">
+                <div class="profile-details">
+                    <p>Some Name</p>
+                    <p>Some Other great Info</p>
+                </div>
+            </div>
+            <div class="profile-content">
+                <img src="./assets/prof-pic.jpeg" alt="profile-pic">
+                <div class="profile-details">
+                    <p>Some Name</p>
+                    <p>Some Other great Info</p>
+                </div>
+            </div>
         </div>
 
+    </div>
 
     <script src="./script.js"></script>
-    </div>
+
 </body>
 </html>
