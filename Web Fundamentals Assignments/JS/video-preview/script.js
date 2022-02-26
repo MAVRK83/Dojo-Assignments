@@ -2,10 +2,11 @@ console.log("page loaded...");
 
 // var this= "droneVid";
 
-function startVid(element) {
-    element.play("play");
+function playVideo(vid) {
+    vid.play();
 }
 
-function pauseVid(element) {
-    element.pause();
+function pauseVideo(vid) {
+    vid.pause();
+    vid.currentTime = 0;
 }
