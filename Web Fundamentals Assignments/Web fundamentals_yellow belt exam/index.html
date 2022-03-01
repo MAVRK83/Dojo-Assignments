@@ -7,31 +7,41 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
     <div class="wrapper">
+        <!-- Nav Bar -->
         <nav>
             <div class="nav-top">
                 <h1 class="nav-title">Gaming<span>Dojo</span></h1>
-                <ul class="nav-links">
-                    <li><button class="currencyBtn">Euro</button></li>
-                    <li><img src="images /cart-light.png" alt="cart"></li>
-                    <li><a id="count">0</a></li>
-                    <li><img src="images /search-light.png" alt="glass"></li>
-                </ul>
+                <div class="nav-links">
+                    <div class="dropDown"><button onclick="myFunction()" class="dropDown">Euro €</button>
+                        <div id="myDropdown" class="dropDown-content">
+                            <a href="#">USD $</a></div>
+                        </div>
+                    <div class="cart-cont">
+                    <div class="cart"><img src="images/cart-light.png" alt="cart" height="40px"></div>
+                    <div><a id="count">0</a></div>
+                    </div>
+                    <div class="glass"><img src="images/search-light.png" alt="glass" height="40px"></div>
+                </div>
             </div>
         </nav>
 
         <h3> Highlights</h3>
         <!-- Slideshow Container -->
         <div class="slideshow-container">
-            <!-- Previous button -->
-            <button onclick="change(this)" class ="leftButton"><img src="images /chevron-left.png"></button>
-            <img src="images /stonepunk.png" alt="stone punk" width="60%">
-            <img src="images /pixel-ninjas-2.png" alt="stone punk" width="60%">
-            <button onclick="leftButton" class ="rightButton"><img src="images /chevron-left.png"></button>
+            <div><button onclick="stonePunk()" class="leftButton"><img src="images/chevron-left.png"></button>
+                
+            </div>
+            <img src="images/stonepunk.png" alt="stone punk" id="highlight">
+            <div>
+                <button onclick="pixelNinja()" class="rightButton"><img src="images/chevron-left.png"></button>
+            </div>
         </div>
 
-        <!-- Dashes -->
+        <!-- Slide Dashes -->
         <div style="text-align:center">
             <span class="dash"></span>
             <span class="dash"></span>
@@ -39,7 +49,59 @@
             <span class="dash"></span>
         </div>
 
+        <!-- Bottom Cards -->
+        <div class ="bottom">
+            <!-- Card1 -->
+            <div class ="cards">
+                <div><img src="images/cafe-neko.png" alt="cat" width="400px"></div>
+                <p>Cafe Neko: Golden Edition</p>
+                <div class="logos">
+                    <img src="images/windows.png" alt="windows logo" height="50px" width="50px">
+                    <img src="images/apple.png" alt="apple logo" height="50px" width="50px">
+                </div>
+                <div class="card-buttons">
+                    <div class="disc">-20%</div>
+                    <span class="newprice">€ 10.49 
+                        <span class="originalpr">€ 14.98</span>
+                    </span>
+                    <div><button onclick="add1()" class="buy">Buy</button></div>
+                </div>
+            </div>
+        
+            <!-- Card2 -->
+            <div class ="cards">
+                <div><img src="images/pixel-ninjas-2.png" alt="ninja game" width="400px"></div>
+                <p>Pixel Ninjas 2</p>
+                <div class="logos">
+                    <img src="images/windows.png" alt="windows logo" height="50px" width="50px">
+                    <img src="images/apple.png" alt="apple logo" height="50px" width="50px">
+                </div>
+                <div class="card-buttons">
+                    <div class="disc">-20%</div>
+                    <span class="newprice">€ 7.39 
+                    <span class="originalpr">€ 8.19</span>
+                    </span>
+                    <div><button onclick="add1()" class="buy">Buy</button></div>
+                </div>
+            </div>
+
+            <!-- Card3 -->
+            <div class ="cards">
+                <div><img src="images/stonepunk.png" alt="stonepunk image" width="400px"></div>
+                <p>Stonepunk 10000 BCE</p>
+                <div class="logos">
+                    <img src="images/windows.png" alt="windows logo" height="50px" width="50px">
+                    <img src="images/apple.png" alt="apple logo" height="50px" width="50px">
+                    <button onclick="alert('This game is supported on Linux')" class="linuxbtn"><img src="images/linux.png" height="50px"></button>
+                </div>
+                <div class="card-buttons">
+                    <div class="disc">-20%</div>
+                    <span class="newprice">€ 19.99</span>
+                    <div><button onclick="add1()" class="buy">Buy</button></div>
+                </div>
+            </div>
+        </div>
     </div>
-    <script src="script.js."></script>
+    <script src="script.js"></script>
 </body>
 </html>
