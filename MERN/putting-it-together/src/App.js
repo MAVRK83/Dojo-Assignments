@@ -32,13 +32,13 @@ const peopleArr = [
 function App() {
   return (
     <div className="App">
-      {peopleArr.map((personObj, index) => (
+      {peopleArr.map((profile, index) => (
         <PersonCard
-        key={index}
-        firstName={personObj.firstName}
-        lastName={personObj.lastName}
-        age={personObj.age}
-        hairColor={personObj.hairColor}
+        // key={index}
+        firstName={profile.firstName}
+        lastName={profile.lastName}
+        age={profile.age}
+        hairColor={profile.hairColor}
         />
       ))}
       {/* <PersonCard

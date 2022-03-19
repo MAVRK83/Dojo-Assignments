@@ -10,10 +10,12 @@ const PersonCard = (props) => {
             </h2>
             <p>Age: {stateAge}</p>
             <p>Hair Color: {hairColor}</p>
-            <button onClick={() => setStateAge(stateAge + 1)}>Birthday for {firstName} {lastName}
+            <button onClick={() => setStateAge(stateAge + 1)}>
+                Birthday for {firstName} {lastName}
             </button>
         </div>
     );
 };
 
 export default PersonCard;
+
