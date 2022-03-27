@@ -18,19 +18,24 @@ const Form = (props) => {
         //    then we add the new color as the last element in the array
         setBoxColorArray( [ ...boxColorArray, color ] );
     }
-
+    console.log('color: ', color)
     return (
         <div>
             <form onSubmit={ submitHandler } style={{ margin: "20px" }}>
-            <div>
-                <label htmlFor="firstName">Color</label>
-                <input 
-                type="text" 
-                name="color"
-                onChange={ (e) => setColor(e.target.value) }
-                />
-            </div>
-            <button>Add</button>
+                <div>
+                    <label htmlFor="firstName">Color</label>
+                    <input 
+                    type="text" 
+                    name="color"
+                    onChange={ (e) => {
+                        console.log('e: ', e)
+                        console.log('e.target.value', e.target.value)
+                        setColor(e.target.value)
+                        
+                    }}
+                    />
+                </div>
+                <button>Add</button>
             </form>
 
         </div>
